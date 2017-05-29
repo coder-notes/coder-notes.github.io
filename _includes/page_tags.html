@@ -1,0 +1,13 @@
+<div class="post_tag">
+    <div class="post_tag_title">Tags:</div>
+    {% if page.tags %}
+    <ul class="post_tag_list">
+        {% for tag in page.tags %}
+        {% assign found_tags = site.topics | where: "slug", tag %}
+        {% for tag in found_tags limit:1 %}
+        <li class="post_tag_item"><a href="{{ tag.url }}" title="{{ tag.title }}" class="post_tag_link">{{ tag.slug }}</a></li>
+        {% endfor %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+</div>

@@ -1,0 +1,19 @@
+/*------------------------------------------ footer styles -------------------------------------------*/
+
+//------------------------------------------------------------layout
+.footer{
+    width: 100%;
+    height: $height_footer;
+    flex-shrink: 0;
+    padding: 30px 0;
+    border-top: 2px solid #e5e5e5;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.7);
+}
+.footer_wrapper{
+    max-width: $page_width;
+    padding: 0 $gl_indent;
+    margin: 0 auto;
+}
+//------------------------------------------------------------layout end
+
+/*----------------------------------------- footer styles end ------------------------------------------*/

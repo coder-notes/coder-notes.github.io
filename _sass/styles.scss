@@ -1,0 +1,19 @@
+// Import partials.
+@import "all_scss/reset";
+
+@import "all_scss/helpers/mixins";
+@import "all_scss/helpers/components"; // components styles 
+@import "all_scss/variables";
+@import "all_scss/libs";         // jQuery plugins styles
+
+@import "all_scss/fonts";
+@import "all_scss/base";
+@import "all_scss/sprite";     // icons sprite styles
+@import "all_scss/helpers/buttons_extends";    // buttons styles extends
+
+@import "all_scss/header";
+@import "all_scss/main";
+@import "all_scss/post";
+@import "all_scss/aside";
+@import "all_scss/footer";
+@import "all_scss/monokai";  // post code styles

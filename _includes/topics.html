@@ -1,0 +1,9 @@
+    <ul class="post_tag_list">
+        {% for page in site.topics %}
+        {% if page.title and site.tags[page.slug] and page.hidden != true %}
+        <li class="post_tag_item">
+            <a class="post_tag_link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>

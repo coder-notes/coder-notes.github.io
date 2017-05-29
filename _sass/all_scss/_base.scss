@@ -1,0 +1,36 @@
+/*------------------------------------------- base styles ---------------------------------------------*/
+html{
+  height: 100%;
+  font: normal 10px $font_f_base;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  min-width:$page_min_width;
+  font-size:$font_size_base;
+  line-height:1.5;
+  color: $color_txt_base;
+  background: $body_bg;
+  overflow-x: hidden;
+}
+a {
+  outline: none;
+  text-decoration: none;
+  color:$color_link_base;
+  transition: all 0.2s ease;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    cursor: pointer;
+    color:$color_link_hover;
+  }
+}
+
+blockquote{
+  padding-left: 10px;
+  border-left: 4px solid $accent_color_yellow;
+
+}
+/*------------------------------------------- base styles end --------------------------------------------*/

@@ -1,0 +1,26 @@
+<header class="header">
+  {% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
+  <div class="top_line">
+    <div class="top_line_row">
+      {% if page_paths %}
+      <nav class="nav_menu">
+        <ul class="nav_menu_list">
+          <li class="nav_menu_item"><a href="{{ "  " | relative_url }}" class="nav_menu_link">Home</a></li>
+          {% for path in page_paths %} 
+          {% assign my_page = site.pages | where: "path", path | first %} {% if my_page.title %}
+          <li class="nav_menu_item"><a href="{{ my_page.url | relative_url }}" class="nav_menu_link">{{ my_page.title | escape }}</a></li>
+          {% endif %} 
+          {% endfor %}
+        </ul>
+      </nav>
+      {% endif %}
+      <a href="#" id="menuButton" class="menu-button"><span class="burger-icon"></span></a>
+    </div>
+  </div>
+  <div class="header_row">
+    {% include logo.html %}
+    {% include social.html %}
+  </div> 
+  
+</header>
+       

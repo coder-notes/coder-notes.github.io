@@ -1,0 +1,44 @@
+//------------------------------------------------------------layout
+.aside {
+  width: 300px;
+  padding: $gl_indent 0;
+}
+@include for-tablet-portrait-down{
+  .aside{
+    display: none;
+  }
+}
+.aside_item{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e4e4e4;
+}
+//------------------------------------------------------------layout end
+
+//------------------------------------------------------------ widgets
+.widget{
+  display: inline-block;
+}
+.widget_title{
+  margin-bottom: 10px;
+  color: #999999;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-rendering: optimizelegibility;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+}
+
+//------------------------------------------------------------ widgets end
+
+//------------------------------------------------------------ aside_menu
+
+.aside_menu{
+  &_link{
+    font-size: 1.4rem;
+    &:hover{
+      text-decoration: none;
+    }
+  }
+}
+
+//------------------------------------------------------------ aside_menu end

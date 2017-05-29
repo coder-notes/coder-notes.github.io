@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<div class="codes_page">
+
+  <h1 class="page_heading">Codes</h1>
+
+<ul class="post_list">
+  {% for post in site.categories.codes %}
+  <li class="post_item">
+    <div class="post_subj mod_{{ post.subj_color }}">
+        <span>{{ post.categories }}</span>
+        </div>
+    <h2>
+      <a class="post_link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+    <ul class="post_meta">
+          <li>
+            <svg class="icon icon-clock gray_mod">
+              <use xlink:href="/assets/icons/sprite/sprite.svg#clock"></use>
+            </svg>
+            <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              {{ post.date | date: date_format }}
+            </time>
+          </li>
+          <li>
+            {% if post.author %}
+            <svg class="icon icon-user gray_mod">
+              <use xlink:href="/assets/icons/sprite/sprite.svg#user"></use>
+            </svg>
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span itemprop="name">{{ post.author }}</span>
+        </span>
+            {% endif %}
+          </li>
+        </ul>
+    <div class="post_excerpt">
+      {{ post.excerpt }}
+    </div>
+    <div class="post_btn">
+      <a href="{{ post.url | relative_url }}">Reade more...</a>
+    </div>
+    <br>
+    {% include post_tags.html %}
+
+  </li>
+  {% endfor %}
+</ul>
+</div>
