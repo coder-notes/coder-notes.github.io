@@ -52,15 +52,11 @@
   padding: 0 $gl_indent;
   .logo{
     height: 33px;
-    display: none;
   }
 }
 @include for-phone-only {
   .top_line_row{
     padding: 0 $mobil_indent;
-    .logo{
-      display: block;
-    }
   }
 }
 
@@ -121,18 +117,18 @@
     position: absolute;
     top: 50px;
     left: 0;
-    border: 1px solid #ccc;
-    border-top:none;
     background-color:$accent_color;
     visibility: hidden;
     opacity: 0;
     transform-origin: 0% 0%;
     transform: rotateX(-90deg);
     transition: .3s linear;
+    box-shadow: 2px 2px 5px rgba(68,68,68,0.6);
   }
   &_item{
     margin-right: 0;
     text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
   }
   &_link{
     display: inline-block;
@@ -144,7 +140,6 @@
     text-rendering: optimizelegibility;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.55);
     transition: all 0.3s ease;
-
     &:hover,
     &:focus,
     &:active{
@@ -182,7 +177,11 @@
     width: 100%;
     &_list{
       width: 100%;
-      background-color:$accent_color;
+      background-color:	rgba(34, 34, 34, .9);
+      box-shadow: 0 8px 6px -6px black;
+    }
+    &_item{
+      box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
     }
     &_link{
       text-align: center;
@@ -192,7 +191,7 @@
       width: 100%;
       font-weight: bold;
       color: #A5A5A5;
-      background-color:$accent_color;
+      background-color:	rgba(34, 34, 34, .6);
       text-rendering: optimizelegibility;
       text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.55);
       transition: all 0.3s ease;
