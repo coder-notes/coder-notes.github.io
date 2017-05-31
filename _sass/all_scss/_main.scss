@@ -56,6 +56,7 @@
 }
 @include for-phone-only{
     .post_item{
+        padding:30px $mobil_indent;
         img{
             margin: 20px auto;
             width: 100%;

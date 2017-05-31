@@ -22,8 +22,11 @@
   padding: 80px $gl_indent 30px $gl_indent;
 }
 @include for-phone-only{
+  .header{
+    min-height: 55px;
+  }
   .header_row{
-    padding: 80px $mobil_indent 30px $mobil_indent;
+    display: none;
   }
 }
 //------------------------------------------------------------ layout end
@@ -42,21 +45,31 @@
   box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
 }
 .top_line_row{
-  @include flex_block(row, nowrap, flex-end, center, center);
+  @include flex_block(row, nowrap, space-between, center, center);
   height: 50px;
   margin: 0 auto;
   max-width: $page_width;
   padding: 0 $gl_indent;
+  .logo{
+    height: 33px;
+    display: none;
+  }
 }
+@include for-phone-only {
+  .top_line_row{
+    padding: 0 $mobil_indent;
+    .logo{
+      display: block;
+    }
+  }
+}
+
 //------------------------------------------------------------ top_line end
 
 
 //------------------------------------------------------------ logo
 .logo{
   display: block;
-  img{
-    display: block;
-  }
   &_w{
     margin-right: 20px;
   }
@@ -69,51 +82,127 @@
       @include flex_block(row, nowrap, flex-start, center , center);
     }
     &_item{
-      margin-right: 20px;
-      &:last-child{
-        margin-right:0;
+      position: relative;
+      &:hover,
+      &:focus{
+        .nav_sub-menu_list{
+          transform: rotateX(0deg);
+          visibility: visible;
+          opacity: 1;
+        }
       }
     }
     &_link{
       display: inline-block;
       text-transform: uppercase;
-      line-height: 30px;
+      line-height: 50px;
+      padding: 0 10px;
+      font-size: 1.6rem;
       font-weight: bold;
       color: #A5A5A5;
       text-rendering: optimizelegibility;
       text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.55);
       transition: all 0.3s ease;
+      background-color:$accent_color;
       &:hover{
         cursor: pointer;
         text-decoration: none;
         color: #fff;
+        background-color: rgba(0,0,0,0.1);
       }
     }
   }
+.nav_sub-menu{
+  &_list{
+    min-width: 200px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    border: 1px solid #ccc;
+    border-top:none;
+    background-color:$accent_color;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: .3s linear;
+  }
+  &_item{
+    margin-right: 0;
+    text-align: center;
+  }
+  &_link{
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    line-height: 50px;
+    font-weight: bold;
+    color: #A5A5A5;
+    text-rendering: optimizelegibility;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.55);
+    transition: all 0.3s ease;
+
+    &:hover{
+      cursor: pointer;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgba(0,0,0,0.1);
+    }
+  }
+}
 
   @include for-tablet-portrait-down {
     .nav_menu{
       display: none;
-      z-index: 100;
-      position: absolute;
-      top:50px;
-      right: 0;
-      width: 100%;
-      &_list{
-        @include flex_block(column, nowrap, flex-start, center , center);
-        background-color: rgba(255,255,255, .9);
-        border: 1px solid #ccc;
-        border-top:none;
-      }
-      &_item{
-        width: 100%;
-        margin-right: 0;
-        text-align: center;
-      }
     }
+  }
+  .icon-home{
+    font-size: 2.2rem;
+    vertical-align: middle;
+    margin-bottom: 4px;
   }
 //------------------------------------------------------------ nav_menu end
 
+//------------------------------------------------------------ mobile_menu
+
+.m-menu{
+  display: none;
+}
+@include for-tablet-portrait-down {
+  .m-menu{
+    z-index: 100;
+    position: absolute;
+    top:50px;
+    right: 0;
+    width: 100%;
+    &_list{
+      width: 100%;
+    }
+    &_link{
+      text-align: center;
+      display: inline-block;
+      text-transform: uppercase;
+      line-height: 50px;
+      width: 100%;
+      font-weight: bold;
+      color: #A5A5A5;
+      background-color:$accent_color;
+      text-rendering: optimizelegibility;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.55);
+      transition: all 0.3s ease;
+      &:hover,
+      :focus{
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+        background-color: rgba(0,0,0,0.1);
+      }
+
+    }
+  }
+}
+
+//------------------------------------------------------------ mobile_menu end
 //------------------------------------------------------------ burger_button
   .menu-button {
     display: none;

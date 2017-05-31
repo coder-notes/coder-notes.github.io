@@ -39,6 +39,6 @@ collections:
     permalink: /topics/:name/
 gems:
   - octopress-autoprefixer
-port: 2000
+port: 9000
 disqus:
   shortname: https-coder-notes-github-io
