@@ -129,6 +129,9 @@
     margin-right: 0;
     text-align: center;
     box-shadow: 0 0 5px rgba(0,0,0,0.2),0 1px 0 rgba(255,255,255,0.15);
+    &:last-child{
+      display: none;
+    }
   }
   &_link{
     display: inline-block;
@@ -170,7 +173,7 @@
 }
 @include for-tablet-portrait-down {
   .m-menu{
-    z-index: 100;
+    z-index: 999;
     position: absolute;
     top:50px;
     right: 0;

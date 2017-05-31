@@ -33,7 +33,17 @@
 //------------------------------------------------------------ aside_menu
 
 .aside_menu{
+  &_item{
+    &:last-child{
+      display: none;
+    }
+    &:before{
+      content: '►';
+      font-size: 1.2rem;
+    }
+  }
   &_link{
+    padding-left: 3px;
     font-size: 1.4rem;
     &:hover{
       text-decoration: none;
