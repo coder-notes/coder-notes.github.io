@@ -45,24 +45,11 @@
     padding: 30px;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 3px 3px rgba(0, 0, 0, 0.05);
     background-color: #fff;
-   img{
-       display: block;
-       margin: 20px 20px 20px 0;
-       width: auto;
-       height: 200px;
-       box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-       float: left;
-   }
+
 }
 @include for-phone-only{
     .post_item{
         padding:30px $mobil_indent;
-        img{
-            margin: 20px auto;
-            width: 100%;
-            height: auto;
-            float: none;
-        }
     }
 }
 .post_meta{
@@ -88,6 +75,7 @@
     }
 }
 .post_excerpt {
+
     color: $color_txt_base;
     ul{
         padding-left: 30px;
@@ -102,8 +90,40 @@
             list-style: decimal;
         }
     }
+    p{
+        margin-bottom: 10px;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        text-rendering: optimizelegibility;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+        color: $accent_color;
+    }
+    img{
+        display: block;
+        margin: 20px 20px 20px 0;
+        width: auto;
+        height: 150px;
+        box-shadow: 0 0px 3px rgba(0, 0, 0, 0.5);
+        float: left;
+    }
+}
+@include for-phone-only{
+    .post_excerpt{
+        img{
+            margin: 20px auto;
+            width: 100%;
+            height: auto;
+            float: none;
+        }
+    }
 }
 .post_btn{
+
     text-align: right;
     text-rendering: optimizelegibility;
     text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);

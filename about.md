@@ -1,9 +1,7 @@
 ---
 layout: page
-title: About
+title: О сайте
 permalink: /about/
 ---
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
+Небольшой блог из серии "Заметки кодера". Буду рассматривать такие темы: html, css, jQuery, jekyll, linux и т.п. короче все с чем сталкивался. Чтоб самому не забыть и другим авось пригодится:)   
+Вообщем чем бы дитя не тешилась, лишь бы...
