@@ -1,4 +1,4 @@
-    ---
+---
 title: Markdown. Основной синтаксис
 layout: post
 author: jora
