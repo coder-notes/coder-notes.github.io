@@ -48,7 +48,9 @@ _Курсив_
 _курсив_
 ~~~
 
-**Жирный**
+**Жирный**  
+Двойные звёздочки генерируют тег \<strong\>
+
 ~~~ markdown
 **Жирный**
 ~~~
@@ -62,21 +64,30 @@ _курсив_
  `Моноширинный`
  ~~~
  
->Цитата
+> Цитата
 
 ~~~ markdown
->Цитата
+> Цитата
 ~~~
 
->Много  
->строчная  
->цитата  
+> Много  
+> строчная  
+> цитата  
 
 ~~~ markdown
->Много
->строчная
->цитата
+> Много
+> строчная
+> цитата
 ~~~
+
+## Выделение
+Одинарные звездочки генерируют тег \<em\>
+это *выделенный* текст
+
+~~~ markdown
+это *выделенный* текст
+~~~
+
 
 ## Списки
 Нумерованный список
@@ -143,7 +154,7 @@ _курсив_
 | honeycrisp | granny smith | fuji | red delicious |
 
 ## Ссылки
-Формат записи ссылки: [Описание] (ссылка)
+Формат записи ссылки: *\[Описание]\(ссылка)*
 * Инлайн ссылка, например  [homepadge](https://coder-notes.github.io/)
 ~~~ markdown
 [homepadge] (https://coder-notes.github.io/)
@@ -155,10 +166,14 @@ _курсив_
 ~~~
 
 ## Изображения
-Формат записи изображения: ![описание] (ссылка на изображение)
+Формат записи изображения: *\![описание]\(ссылка на изображение)*
 ~~~ markdown
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
 ~~~
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+ 
+## Экранирование
+Для экранирования служебных символов маркдауна нужно использовать обратный слеш \
+
 <br>
- [Более полные данные по синтаксису Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Более полные данные по синтаксису Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
