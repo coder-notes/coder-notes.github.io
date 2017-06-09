@@ -176,4 +176,5 @@ _курсив_
 Для экранирования служебных символов маркдауна нужно использовать обратный слеш \
 
 <br>
-[Более полные данные по синтаксису Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+[Более полные данные по синтаксису Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+[То же, но уже на родном языке](https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md)

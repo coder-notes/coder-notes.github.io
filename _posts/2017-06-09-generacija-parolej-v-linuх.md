@@ -9,7 +9,7 @@ tag:
  - console
 comments: true
 ---
-![Генерация паролей в Linux]({{ site.url }}/assets/img/pass.jpg)
+![Генерация паролей в Linux]({{ site.url }}/assets/img/pass.jpg )
 Встал вопрос о генерации паролей в Linux.  
 Оказалось вcе просто, нашел несколько вариантов генрации паролей в консоле Linux.  
 
