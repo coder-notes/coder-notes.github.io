@@ -188,6 +188,11 @@
       content: "markdown";
     }
   }
+  &-json{
+    &:before{
+      content: "json";
+    }
+  }
 }
 @include for-phone-only{
   .highlight{
