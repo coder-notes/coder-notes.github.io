@@ -7,6 +7,7 @@ subj_color: blue
 tag: 
  - linux
  - console
+ - pass
 comments: true
 ---
 ![Генерация паролей в Linux]({{ site.url }}/assets/img/pass.jpg )
