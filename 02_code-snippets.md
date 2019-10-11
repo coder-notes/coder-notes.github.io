@@ -1,7 +1,7 @@
 ---
 title: Code Snippets
 layout: code-page
-permalink: "/code snippets/"
+permalink: "/code-snippets/"
 ---
 
 
