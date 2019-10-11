@@ -1,0 +1,35 @@
+I"D<p><img src="http://localhost:9000/assets/img/cookies.jpg" alt="Где хранятся cookies браузеров в ОС Windows" />
+Небольшая памятка о том, где хранятся cookies популярных браузеров: Google Chrome, Mozilla Firefox, Opera, Яндекс Браузер,
+Internet Explorer 11, в ОС Windows.</p>
+
+<h2 id="google-chrome">Google Chrome</h2>
+<p>Куки Google Chrome  хранятся в файле “Cookies”(без расширения), он находится здесь:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\Пользователь\AppData\Local\Google\Chrome\User Data\Default\
+</code></pre></div></div>
+
+<h2 id="mozilla-firefox">Mozilla Firefox</h2>
+<p>Куки Mozilla Firefox  хранятся в файле “cookies.sqlite”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\Пользователь\AppData\Roaming\Mozilla\Firefox\Profiles\qx1fqa6b.Default User\
+</code></pre></div></div>
+
+<h2 id="opera">Opera</h2>
+<p>Куки Opera  хранятся в файле “Cookies”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\Пользователь\AppData\Roaming\Opera Software\Opera Stable\
+</code></pre></div></div>
+
+<h2 id="яндекс-браузер">Яндекс Браузер</h2>
+<p>Куки Яндекс Браузер  хранятся в файле “Cookies”:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\Пользователь\AppData\Local\Yandex\YandexBrowser\User Data\Default\
+</code></pre></div></div>
+
+<h2 id="internet-explorer-11">Internet Explorer 11</h2>
+<p>Куки Internet Explorer 11 хранятся тут:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\Пользователь\AppData\Local\Microsoft\Windows\INetCookies\
+C:\Users\Пользователь\AppData\Roaming\Microsoft\Windows\Cookies\     
+</code></pre></div></div>
+:ET

@@ -1,0 +1,193 @@
+I"�%<p><img src="http://localhost:9000/assets/img/markdown.png" alt="markdown logo" />
+Markdown (маркдаун) — простой язык разметки для публикации Web. Он создан для удобного написания и редактирования размеченного текста. 
+Markdown  используют для ведения заметок, блогов, в мессенджерах, для описания проектов, для составления презентаций или как основа для целого сайта. <br />
+Данный язык разметки использует генератор статических сайтов Jekyll.</p>
+
+<h2 id="параграфы">Параграфы</h2>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;</span><span class="err">пустая</span> <span class="err">строка</span><span class="nt">&gt;</span> 
+Текст параграфа. Может быть
+разбит на несколько строк.
+<span class="nt">&lt;</span><span class="err">пустая</span> <span class="err">строка</span><span class="nt">&gt;</span>    
+</code></pre></div></div>
+
+<h2 id="перевод-строки">Перевод строки</h2>
+<p>Для перевода строки без начала нового параграфа в конце  необходимо поставить два или более пробела</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Текст параграфа.<span class="nt">&lt;</span><span class="err">пробел</span><span class="nt">&gt;&lt;</span><span class="err">пробел</span><span class="nt">&gt;</span>
+Этот текст будет с новой строки.
+</code></pre></div></div>
+
+<h2 id="заголовки">Заголовки</h2>
+<p>В Markdown имеется 6 уровней заголовков как в HTML - с &lt;h1&gt; по &lt;h6&gt;. Для выделения заголовка используется решетка, 
+колчичество решеток соответствует уровню заголовка.</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> # Заголовок первого уровняую
+ ## Заголовок второго уровня
+ ### Заголовок третьего уровня
+ #### Заголовок четвёртого уровня
+ ##### Заголовок пятого уровня
+ ###### Заголовок шестого уровня    
+</code></pre></div></div>
+<h2 id="форматирование-текста">Форматирование текста</h2>
+<p><em>Курсив</em></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="ge">_курсив_</span>
+</code></pre></div></div>
+
+<p><strong>Жирный</strong><br />
+Двойные звёздочки генерируют тег &lt;strong&gt;</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gs">**Жирный**</span>
+</code></pre></div></div>
+<p><del>Зачёркнутый</del></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>~~Зачёркнутый~~
+</code></pre></div></div>
+
+<p><code class="highlighter-rouge">Моноширинный</code></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="sb">`Моноширинный`</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Цитата</p>
+</blockquote>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; Цитата</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Много<br />
+строчная<br />
+цитата</p>
+</blockquote>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gt">&gt; Много</span>
+<span class="gt">&gt; строчная</span>
+<span class="gt">&gt; цитата</span>
+</code></pre></div></div>
+
+<h2 id="выделение">Выделение</h2>
+<p>Одинарные звездочки генерируют тег &lt;em&gt;
+это <em>выделенный</em> текст</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>это <span class="ge">*выделенный*</span> текст
+</code></pre></div></div>
+
+<h2 id="списки">Списки</h2>
+<p>Нумерованный список</p>
+
+<ol>
+  <li>html</li>
+  <li>css</li>
+  <li>jQuery</li>
+</ol>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">1.</span> html
+<span class="p">2.</span> css
+<span class="p">3.</span> jQuery
+</code></pre></div></div>
+
+<p>Ненумерованный список</p>
+
+<ul>
+  <li>html</li>
+  <li>css</li>
+  <li>jQuery</li>
+</ul>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">*</span> html
+<span class="p">*</span> css
+<span class="p">*</span> jQuery
+</code></pre></div></div>
+
+<h2 id="горизонтальная-линияразделитель">Горизонтальная линия(разделитель)</h2>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">-------------------
+</span></code></pre></div></div>
+<hr />
+
+<h2 id="код">Код</h2>
+<p>Отступ в Tab или четыре пробела генерирует блок кода:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>.mod_html{
+    &amp;:before{
+        content: 'HTML5';
+        background-color: $accent_color_red;
+    }
+}
+</code></pre></div></div>
+
+<h2 id="таблицы">Таблицы</h2>
+<p>Таблицы можно записать вот таким образом:</p>
+
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Priority apples | Second priority | Third priority | Fourth priority |
+|-------|-------|-------|
+| ambrosia | gala | red delicious | red delicious |
+| pink lady | jazz | macintosh | red delicious |
+| honeycrisp | granny smith | fuji | red delicious |
+| honeycrisp | granny smith | fuji | red delicious |
+</code></pre></div></div>
+
+<p>получаем таблицу:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Priority apples</th>
+      <th>Second priority</th>
+      <th>Third priority</th>
+      <th>Fourth priority</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ambrosia</td>
+      <td>gala</td>
+      <td>red delicious</td>
+      <td>red delicious</td>
+    </tr>
+    <tr>
+      <td>pink lady</td>
+      <td>jazz</td>
+      <td>macintosh</td>
+      <td>red delicious</td>
+    </tr>
+    <tr>
+      <td>honeycrisp</td>
+      <td>granny smith</td>
+      <td>fuji</td>
+      <td>red delicious</td>
+    </tr>
+    <tr>
+      <td>honeycrisp</td>
+      <td>granny smith</td>
+      <td>fuji</td>
+      <td>red delicious</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="ссылки">Ссылки</h2>
+<p>Формат записи ссылки: <em>[Описание](ссылка)</em></p>
+<ul>
+  <li>Инлайн ссылка, например  <a href="https://coder-notes.github.io/">homepadge</a>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">homepadge</span><span class="p">]</span> <span class="p">(</span><span class="sx">https://coder-notes.github.io/</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Cсылка с атрибутом  <a href="https://coder-notes.github.io/" title="title">homepadge</a>
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">homepadge</span><span class="p">]</span> <span class="p">(</span><span class="sx">https://coder-notes.github.io/</span> <span class="nn">"title"</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="изображения">Изображения</h2>
+<p>Формат записи изображения: <em>![описание](ссылка на изображение)</em></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">alt text</span><span class="p">](</span><span class="sx">https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png</span> <span class="nn">"Logo Title Text 1"</span><span class="p">)</span>
+</code></pre></div></div>
+<p><img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1" /></p>
+
+<h2 id="экранирование">Экранирование</h2>
+<p>Для экранирования служебных символов маркдауна нужно использовать обратный слеш \</p>
+
+<p><br />
+<a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Более полные данные по синтаксису Markdown</a><br />
+<a href="https://github.com/OlgaVlasova/markdown-doc/blob/master/README.md">То же, но уже на родном языке</a></p>
+:ET

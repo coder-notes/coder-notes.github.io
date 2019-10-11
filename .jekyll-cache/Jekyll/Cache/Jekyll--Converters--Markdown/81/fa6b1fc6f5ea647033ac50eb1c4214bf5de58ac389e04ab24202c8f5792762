@@ -1,0 +1,24 @@
+I"�<p><img src="http://localhost:9000/assets/img/vsc_emmet.jpg" alt="Настройка корректной работы EMMET в Visual Studio Code" />
+<a href="https://code.visualstudio.com/">Visual Studio Code</a> - хороший кроссплатформенный, редактор кода. Несмотря на то, что это продукт компании Microsoft, Visual Studio Code
+является бесплатным Open source проектом. VSC-находится в активном развитии, обновления выходят каждый месяц, и это радует:).
+Данный редактор относительно легковестный, имеет возможность подключения различных плагинов, встроенный EMMET и инструмент для работы
+с git. Вообщем данный редактор меня устраивает всем, однако работа EMMET в нем слегка кривовата, выводит не те значения что положено (заметил при работе с CSS).
+Вот один из способов исправить данную проблему.</p>
+
+<p>Входим в настройку горячих клавиш. Menu - File - Preferences - Keyboard Shortcuts или нажимаем последовательно сочитание клавиш [ctrl+k ctrl+s].
+В данном разделе находим файл keybinding.json открываем и редактируем его, добавляем такой код:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="w">    </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tab"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tab"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editorTextFocus &amp;&amp; !editorTabMovesFocus"</span><span class="w">
+    </span><span class="p">}</span><span class="err">,</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tab"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"command"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editor.emmet.action.expandAbbreviation"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"when"</span><span class="p">:</span><span class="w"> </span><span class="s2">"editorTextFocus &amp;&amp; !editorHasSelection &amp;&amp; !editorHasMultipleSelections &amp;&amp; !editorTabMovesFocus"</span><span class="w">
+    </span><span class="p">}</span><span class="w"> 
+</span></code></pre></div></div>
+
+<p>Данный способ нашел <a href="https://toster.ru/q/303307">здесь</a></p>
+:ET
