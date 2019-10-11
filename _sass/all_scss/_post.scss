@@ -251,11 +251,11 @@
 /*----------------------------------------- post tag ------------------------------------*/
 .post_tag{
   &_list{
-    display: inline-block;
+    @include flex_block(row, wrap, flex-start, center , center);
   }
   &_item{
-    margin-right: 3px;
-    display: inline-block;
+    margin: 1px;
+    
   }
   &_link{
     display: block;
