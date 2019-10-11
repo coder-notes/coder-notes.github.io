@@ -3,7 +3,7 @@ title: Прелоадер для сайта на чистом Javascript
 layout: post
 author: jora
 categories: codes
-subj_color: greengi
+subj_color: green
 tag: 
  - JavaScript
  - code
