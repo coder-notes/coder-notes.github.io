@@ -1,0 +1,25 @@
+I"<p><img src="http://localhost:9000/assets/img/markdown.png" alt="markdown logo" />
+Выводим в Jekyll список похожих/интересных записей (Similar Posts) с помощью такого сниппета:</p>
+
+<p>~Liquid</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>             &lt;h4&gt;Похожие записи&lt;/h4&gt;
+             &lt;ul&gt;
+             
+             &lt;li class="relatedPost"&gt;
+                 &lt;a href="http://localhost:9000/jekyll/2017/06/06/markdown-syntaxis.html"&gt;Markdown. Основной синтаксис
+                 
+                 &lt;/a&gt;
+             &lt;/li&gt;
+             
+             
+         
+     
+ 
+ 
+ 
+&lt;/ul&gt;
+</code></pre></div></div>
+
+<p>~~~</p>
+:ET
