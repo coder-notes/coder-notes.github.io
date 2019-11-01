@@ -11,7 +11,7 @@ tag:
 comments: true
 ---
 ![docs-to-markdown]({{ site.url }}/assets/img/google-doc-to-markdown.jpg)
-gd2md-html-Плагин Google Docs для экспорта документов Docks в Markdown или HTML.
+gd2md-html - Плагин Google Docs для экспорта документов Docks в Markdown или HTML.
 
 Плагин всегда конвертирует документ полностью, и если вы просто выделили какую-то часть текста, оно не сработает. Так что важно убедиться, чтобы никакая часть текста не была выделена, прежде чем пытаться конвертировать документ.
 
