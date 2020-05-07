@@ -11,7 +11,7 @@
 .aside_item{
   margin-bottom: 20px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #e4e4e4;
+  border-bottom: 1px solid $accent_color_1;
 }
 //------------------------------------------------------------layout end
 
@@ -21,7 +21,7 @@
 }
 .widget_title{
   margin-bottom: 10px;
-  color: #999999;
+  color: $accent_color;
   text-transform: uppercase;
   font-size: 1.4rem;
   text-rendering: optimizelegibility;

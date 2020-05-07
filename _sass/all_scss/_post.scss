@@ -5,7 +5,7 @@
   position: relative;
   padding: 30px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05), 0 3px 3px rgba(0, 0, 0, 0.05);
-  background-color: #fff;
+  background-color: $accent_color_2;
 }
 @include for-phone-only{
   .post{
@@ -28,11 +28,14 @@
 .post_meta {
     display: block;
     font-size: 1.4rem;
-    color: #bbb;
+    color: $accent_color_red;
     margin-bottom: 25px;
     li{
       display: inline-block;
       margin-right: 10px;
+    }
+    time{
+      vertical-align: middle;
     }
 }
 
@@ -40,7 +43,8 @@
   img{
     display: block;
     margin: 20px auto 20px auto;
-    max-width: 90%;
+    max-width: 700px;
+    width:100%;
     box-shadow: 0 0px 5px rgba(0, 0, 0, 0.2);
   }
   p,
@@ -82,11 +86,11 @@
 }
 .icon-user,
 .icon-clock{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   vertical-align: middle;
-  margin-right: 2px;
+  margin-right: 1px;
   &.gray_mod {
-    color:#bbb;
+    color:$accent_color_red;
   }
 }
 /*----------------------------------------- table style ------------------------------------*/
@@ -260,14 +264,15 @@
   &_link{
     display: block;
     padding: 3px 5px;
+    border: 1px solid #b3b3b3;
     border-radius: 2px;
-    background-color: $accent_color_grey;
+    background-color: $accent_color_2;
     font-size: 1.2rem;
-    color: #666;
+    color: $accent_color;
     &:hover{
       background-color: $accent_color_red;
       text-decoration: none;
-      color: #ffffff;
+      color: #fff;
     }
   }
 }

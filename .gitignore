@@ -11,6 +11,8 @@ components/
 _site/
 /.sass-cache
 .sass-cache
+/.jekyll-cache
+.jekyll-cache
 .*.swp
 .DS_Store
 
